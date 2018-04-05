@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 
 
 
-  def validate(post)
+  def is_claickbait?
     validates :title, inclusion:  { in: %w( "Won't Believe", "Secret", "Top [0-9]", or "Guess")
 
   end
