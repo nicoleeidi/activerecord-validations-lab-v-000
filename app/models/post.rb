@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 end
 class MyValidator < ActiveModel::Validator
   def validate(post)
-    validates :title, inclusion:  { in: %w(Fiction Non-Fiction)
+    validates :title, inclusion:  { in: %w( "Won't Believe", "Secret", "Top [0-9]", or "Guess")
 
   end
 end
